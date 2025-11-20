@@ -3,51 +3,616 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan - Portafolio Profesional</title>
+    <title>Juan Parra - Portafolio Profesional</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header y Navegación -->
     <header>
-        <nav>
-            <h1>Tu Nombre</h1>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Juan Parra</h1>
+                    <p class="tagline">Consultor Junior | Desarrollador</p>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#certificaciones">Certificaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Consultor Junior | Desarrollador</h2>
-        <p>Especializado en IA, Automatización y Cloud Computing</p>
-    </section>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Tu descripción profesional...</p>
-    </section>
-
-    <section id="services">
-        <h2>Servicios</h2>
-        <div class="service-grid">
-            <!-- Tus servicios -->
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Foto de Perfil -->
+                <div class="profile-photo">
+                    <img src="images/fotoPerfil.jpg" alt="Juan Parra - Foto de Perfil">
+                </div>
+                
+                <h1 class="hero-title">Juan Eduardo Esaúl Parra Vergara</h1>
+                <h2 class="hero-subtitle">Consultor Junior | Desarrollador</h2>
+                <p class="hero-description">Especializado en IA, Automatización y Cloud Computing</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                    <a href="#proyectos" class="btn btn-secondary">Ver Proyectos</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:Jparravergara029@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-parra-vergara-5a9b1b334" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jeepv2405" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <!-- Tus proyectos -->
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi">
+        <div class="container">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="sobre-mi-content">
+                <div class="sobre-mi-text">
+                    <p>Estudiante de <strong>Ingeniería en Computación e Informática</strong> de la Universidad Andrés Bello, cursando el último semestre de carrera, con sólida formación en automatización de procesos, análisis de datos e inteligencia artificial.</p>
+                    
+                    <p>He obtenido certificaciones profesionales en <strong>IBM Data Science</strong> e <strong>IBM AI Developer</strong>, y formación complementaria en Big Data, Ciberseguridad y normativas ISO/IEC 27001.</p>
+                    
+                    <p>Mi experiencia práctica incluye el desarrollo de soluciones de automatización inteligente, gestión de infraestructura cloud y análisis de datos en entornos empresariales. Actualmente me desempeño como <strong>Consultor Junior en Invoke Ltda.</strong>, donde trabajo con herramientas de automatización (Python, n8n), cloud computing (GCP, OpenShift, Ansible) y metodologías ágiles (Scrum, Kanban).</p>
+                    
+                    <p>Me caracterizo por mi capacidad de adaptación tecnológica, trabajo en equipo y enfoque orientado a resultados. Mi experiencia como mentor universitario me ha permitido desarrollar habilidades de comunicación efectiva y liderazgo colaborativo, fundamentales para trabajar en equipos multidisciplinarios.</p>
+                    
+                    <p><strong>Objetivo profesional:</strong> Busco desarrollarme en el ámbito de la transformación digital, contribuyendo con soluciones innovadoras que generen impacto real en las organizaciones. Mi meta es especializarme en arquitectura de soluciones de IA y automatización, integrando tecnología, análisis estratégico y gestión de proyectos.</p>
+                </div>
+                <div class="sobre-mi-info">
+                    <div class="info-card">
+                        <h3>Información Personal</h3>
+                        <ul>
+                            <li><i class="fas fa-graduation-cap"></i> Ingeniería en Computación e Informática</li>
+                            <li><i class="fas fa-university"></i> Universidad Andrés Bello</li>
+                            <li><i class="fas fa-briefcase"></i> Consultor Junior - Invoke Ltda.</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Santiago, Chile</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Áreas de Interés</h3>
+                        <ul>
+                            <li><i class="fas fa-robot"></i> Inteligencia Artificial y Machine Learning</li>
+                            <li><i class="fas fa-cogs"></i> Automatización Inteligente y DevOps</li>
+                            <li><i class="fas fa-chart-line"></i> Ciencia de Datos y Analytics</li>
+                            <li><i class="fas fa-digital-tachograph"></i> Transformación Digital</li>
+                            <li><i class="fas fa-shield-alt"></i> Ciberseguridad</li>
+                            <li><i class="fas fa-project-diagram"></i> Gestión de Proyectos Tecnológicos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <!-- Formulario o links -->
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="section-title">Servicios Profesionales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automatización de Procesos TI</h3>
+                    <p>Desarrollo de playbooks con Ansible, creación de flujos automatizados utilizando n8n y Python, automatización de reportes y notificaciones, e integración de sistemas mediante APIs.</p>
+                    <ul class="servicio-beneficios">
+                        <li>Reducción de tareas manuales</li>
+                        <li>Minimización de errores</li>
+                        <li>Optimización de eficiencia operacional</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análisis de Datos y Business Intelligence</h3>
+                    <p>Transformación de datos en información accionable a través de análisis, creación de dashboards y visualizaciones interactivas, desarrollo de reportes automatizados y análisis de métricas.</p>
+                    <ul class="servicio-beneficios">
+                        <li>Insights para toma de decisiones</li>
+                        <li>Visualizaciones interactivas</li>
+                        <li>Reportes automatizados</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Soluciones con Inteligencia Artificial</h3>
+                    <p>Implementación de sistemas RAG (Retrieval-Augmented Generation), creación de agentes IA con modelos de lenguaje (LLMs), integración de modelos de Machine Learning y procesamiento de lenguaje natural.</p>
+                    <ul class="servicio-beneficios">
+                        <li>Automatización de respuestas inteligentes</li>
+                        <li>Gestión optimizada del conocimiento</li>
+                        <li>Mejora de procesos empresariales</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Infraestructura Cloud y DevOps</h3>
+                    <p>Gestión y optimización de infraestructura cloud, administración de recursos en Google Cloud Platform y OpenShift, configuración de contenedores con Docker, análisis de costos cloud e implementación de pipelines CI/CD.</p>
+                    <ul class="servicio-beneficios">
+                        <li>Automatización de despliegues</li>
+                        <li>Mejora de escalabilidad</li>
+                        <li>Optimización de costos</li>
+                    </ul>
+                </div>
+
+                <div class="servicio-card">
+                    <div class="servicio-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte TI y ITSM</h3>
+                    <p>Soporte técnico especializado mediante administración de plataformas ITSM como ITop, gestión eficiente de incidentes y requerimientos, ejecución de healthcheck y diagnóstico de sistemas, y elaboración de documentación técnica.</p>
+                    <ul class="servicio-beneficios">
+                        <li>Continuidad operativa</li>
+                        <li>Gestión eficiente de incidentes</li>
+                        <li>Mejora continua de servicios</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Tu Nombre</p>
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <div class="proyecto-header">
+                        <i class="fas fa-robot proyecto-icon"></i>
+                        <h3>Implementación de Agente de IA con RAG Local</h3>
+                    </div>
+                    <p class="proyecto-descripcion">Desarrollo de un sistema de inteligencia artificial basado en arquitectura RAG (Retrieval-Augmented Generation) utilizando n8n como orquestador de flujos. El proyecto permitió crear un agente IA capaz de generar respuestas coherentes en lenguaje natural utilizando documentos almacenados en buckets S3 como fuente de conocimiento.</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Qdrant</span>
+                        <span class="tech-tag">Minio (S3)</span>
+                        <span class="tech-tag">Ollama AI</span>
+                    </div>
+                    <div class="proyecto-resultados">
+                        <h4>Resultados Obtenidos:</h4>
+                        <ul>
+                            <li>Acoplamiento exitoso del contenedor Minio en Docker</li>
+                            <li>Configuración operacional de base de datos vectorial Qdrant</li>
+                            <li>Agente IA funcional con generación de respuestas coherentes</li>
+                            <li>Integración completa con buckets S3</li>
+                            <li>Sistema de generación automática de carpetas y archivos</li>
+                        </ul>
+                    </div>
+                    <p class="proyecto-rol"><strong>Rol:</strong> Desarrollador individual con supervisión</p>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-header">
+                        <i class="fas fa-server proyecto-icon"></i>
+                        <h3>Suite de Automatización con Ansible</h3>
+                    </div>
+                    <p class="proyecto-descripcion">Desarrollo de una suite completa de playbooks de Ansible para automatización de tareas de infraestructura, incluyendo verificación de conectividad, diagnóstico de salud de sistemas (healthcheck) y análisis de recursos en entornos locales, remotos y cloud (GCP). Incluye integración con BigQuery para análisis de costos.</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">AAP</span>
+                        <span class="tech-tag">Google Cloud Platform</span>
+                        <span class="tech-tag">BigQuery</span>
+                        <span class="tech-tag">GitLab</span>
+                        <span class="tech-tag">Jinja2</span>
+                    </div>
+                    <div class="proyecto-resultados">
+                        <h4>Resultados Obtenidos:</h4>
+                        <ul>
+                            <li>Verificación de comunicación entre VMs CentOS y Windows</li>
+                            <li>Recopilación de métricas de CPU/RAM/Disco y procesos</li>
+                            <li>Plantillas Jinja2 generando reportes legibles</li>
+                            <li>Informes automatizados enviados por email desde AAP</li>
+                            <li>Healthcheck funcional en instancias cloud</li>
+                            <li>Extracción y análisis de costos de GCP</li>
+                        </ul>
+                    </div>
+                    <p class="proyecto-rol"><strong>Rol:</strong> Desarrollador de automatización bajo supervisión</p>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-header">
+                        <i class="fas fa-chart-pie proyecto-icon"></i>
+                        <h3>Dashboards Empresariales para ITop</h3>
+                    </div>
+                    <p class="proyecto-descripcion">Desarrollo frontend de dashboards interactivos para la plataforma ITSM ITop. Incluye diseño de visualizaciones de datos, gestión de familias de servicios, registro de organizaciones y preparación de datos para integración con clientes (Claro Chile).</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">ITop</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">YAML</span>
+                        <span class="tech-tag">OpenShift</span>
+                        <span class="tech-tag">Excel</span>
+                    </div>
+                    <div class="proyecto-resultados">
+                        <h4>Dashboards Desarrollados:</h4>
+                        <ul>
+                            <li>Dashboard de Requerimientos: Analistas, responsables, prioridades</li>
+                            <li>Dashboard de Incidentes: Estados, tiempos de asignación y solución</li>
+                            <li>Dashboard de Servicios: Familias, subcategorías, proveedores</li>
+                            <li>6 nuevas organizaciones registradas</li>
+                            <li>Familia Innovación: 4 servicios, 20 subcategorías</li>
+                            <li>Integración OpenShift para Claro Chile</li>
+                        </ul>
+                    </div>
+                    <p class="proyecto-rol"><strong>Rol:</strong> Desarrollador frontend y administrador de datos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experiencia" class="experiencia">
+        <div class="container">
+            <h2 class="section-title">Experiencia Profesional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Consultor Junior</h3>
+                        <h4>Invoke Ltda.</h4>
+                        <p class="periodo">Octubre 2024 - Actualidad</p>
+                        <ul>
+                            <li>Desarrollo de soluciones de automatización con Ansible y n8n</li>
+                            <li>Implementación de sistemas RAG con inteligencia artificial</li>
+                            <li>Gestión de infraestructura cloud en GCP y OpenShift</li>
+                            <li>Creación de dashboards empresariales para ITSM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Practicante - Asesor Junior</h3>
+                        <h4>Invoke Ltda.</h4>
+                        <p class="periodo">Julio - Octubre 2024 (3 meses)</p>
+                        <ul>
+                            <li>Automatización de procesos TI mediante Ansible Automation Platform (AAP)</li>
+                            <li>Desarrollo de health checks para sistemas CentOS y Windows</li>
+                            <li>Trabajo con Google Cloud Platform (GCP) y despliegues en VMs</li>
+                            <li>Integración de flujos automatizados con n8n y modelos de IA mediante RAG</li>
+                            <li>Gestión de infraestructura con OpenShift y AAP</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Mentor(a) Junior CIADE</h3>
+                        <h4>Universidad Andrés Bello</h4>
+                        <p class="periodo">Marzo - Julio 2024 (5 meses)</p>
+                        <ul>
+                            <li>Apoyo y orientación a estudiantes en sus progresos académicos</li>
+                            <li>Seguimiento y estrategias de estudio personalizadas</li>
+                            <li>Fomento de habilidades de creatividad, trabajo en equipo y resolución de problemas</li>
+                            <li>Desarrollo de relaciones de confianza y acompañamiento efectivo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Practicante - Recursos Humanos</h3>
+                        <h4>Aramark</h4>
+                        <p class="periodo">Enero - Marzo 2024 (3 meses)</p>
+                        <ul>
+                            <li>Capacitación en SAP SuccessFactors y Power Automate</li>
+                            <li>Desarrollo de macros en Excel y PowerPoint</li>
+                            <li>Gestión de envíos masivos de correos (Excel-Word-Outlook)</li>
+                            <li>Diseño de registros automatizados con Power Automate</li>
+                            <li>Integración de datos desde API a dashboards en Power BI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="habilidades-container">
+                <div class="habilidades-tecnicas">
+                    <h3><i class="fas fa-laptop-code"></i> Habilidades Técnicas</h3>
+                    <div class="habilidades-grid">
+                        <div class="habilidad-categoria">
+                            <h4>Lenguajes de Programación</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">R</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Automatización</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">n8n</span>
+                                <span class="skill-tag">Ansible</span>
+                                <span class="skill-tag">Power Automate</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Cloud Computing</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Google Cloud Platform</span>
+                                <span class="skill-tag">OpenShift</span>
+                                <span class="skill-tag">Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Data Science & IA</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">IBM Watson</span>
+                                <span class="skill-tag">RAG Systems</span>
+                                <span class="skill-tag">Ollama</span>
+                                <span class="skill-tag">Power BI</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Bases de Datos</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Qdrant</span>
+                                <span class="skill-tag">BigQuery</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Metodologías</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Scrum</span>
+                                <span class="skill-tag">Kanban</span>
+                                <span class="skill-tag">DevOps</span>
+                            </div>
+                        </div>
+
+                        <div class="habilidad-categoria">
+                            <h4>Infraestructura & Seguridad</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">ITop (ITSM)</span>
+                                <span class="skill-tag">Minio</span>
+                                <span class="skill-tag">ISO/IEC 27001</span>
+                                <span class="skill-tag">GNS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidades-blandas">
+                    <h3><i class="fas fa-users"></i> Habilidades Blandas</h3>
+                    <ul class="soft-skills-list">
+                        <li><i class="fas fa-check-circle"></i> Trabajo en equipo y colaboración multidisciplinaria</li>
+                        <li><i class="fas fa-check-circle"></i> Comunicación efectiva oral y escrita</li>
+                        <li><i class="fas fa-check-circle"></i> Adaptabilidad tecnológica y aprendizaje continuo</li>
+                        <li><i class="fas fa-check-circle"></i> Resolución de problemas con enfoque analítico</li>
+                        <li><i class="fas fa-check-circle"></i> Liderazgo colaborativo</li>
+                        <li><i class="fas fa-check-circle"></i> Orientación a resultados y cumplimiento de objetivos</li>
+                        <li><i class="fas fa-check-circle"></i> Pensamiento crítico y toma de decisiones</li>
+                        <li><i class="fas fa-check-circle"></i> Gestión del tiempo y organización</li>
+                        <li><i class="fas fa-check-circle"></i> Responsabilidad y compromiso profesional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <section id="certificaciones" class="certificaciones">
+        <div class="container">
+            <h2 class="section-title">Certificaciones y Formación</h2>
+            <div class="certificaciones-grid">
+                <div class="certificacion-card destacada">
+                    <div class="certificacion-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>IBM Data Science Professional Certificate</h3>
+                    <p class="emisor"><i class="fas fa-building"></i> IBM - Coursera</p>
+                    <p class="periodo">Marzo - Julio 2024</p>
+                    <div class="areas-cubiertas">
+                        <p><strong>Áreas cubiertas:</strong></p>
+                        <ul>
+                            <li>Análisis de datos con Python</li>
+                            <li>Machine Learning</li>
+                            <li>Visualización de datos</li>
+                            <li>Metodologías de Data Science</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certificacion-card destacada">
+                    <div class="certificacion-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>IBM AI Developer Professional Certificate</h3>
+                    <p class="emisor"><i class="fas fa-building"></i> IBM - Coursera</p>
+                    <p class="periodo">Marzo - Julio 2024</p>
+                    <div class="areas-cubiertas">
+                        <p><strong>Áreas cubiertas:</strong></p>
+                        <ul>
+                            <li>Desarrollo con Inteligencia Artificial</li>
+                            <li>APIs y modelos de ML</li>
+                            <li>IBM Watson</li>
+                            <li>Implementación de soluciones IA</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certificacion-card">
+                    <div class="certificacion-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Scrum Foundation Professional Certification (SFPC™)</h3>
+                    <p class="emisor"><i class="fas fa-building"></i> Certiprof</p>
+                    <p class="periodo">Julio 2024</p>
+                </div>
+
+                <div class="certificacion-card">
+                    <div class="certificacion-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Big Data</h3>
+                    <p class="emisor"><i class="fas fa-university"></i> Universitat Autònoma de Barcelona</p>
+                    <p class="periodo">Marzo - Julio 2024 | Nota: 90.3%</p>
+                    <div class="areas-cubiertas">
+                        <p><strong>Contenido:</strong></p>
+                        <ul>
+                            <li>Procesamiento de grandes volúmenes de datos</li>
+                            <li>Análisis de datos masivos</li>
+                            <li>Aspectos éticos y privacidad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="certificacion-card">
+                    <div class="certificacion-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>ISO/IEC 27001 Fundamentals</h3>
+                    <p class="emisor"><i class="fas fa-certificate"></i> Formación Complementaria</p>
+                    <div class="areas-cubiertas">
+                        <p><strong>Contenido:</strong></p>
+                        <ul>
+                            <li>Estándares de seguridad de la información</li>
+                            <li>Sistemas de gestión de seguridad</li>
+                            <li>Compliance y auditoría</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>¡Hablemos!</h3>
+                    <p>Estoy disponible para proyectos de consultoría, desarrollo y colaboraciones. Si tienes una idea o necesitas ayuda con automatización, IA o infraestructura cloud, contáctame.</p>
+                    
+                    <div class="contacto-items">
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:Jparravergara029@gmail.com">Jparravergara029@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/juan-parra-vergara-5a9b1b334" target="_blank">Juan Parra Vergara</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/jeepv2405" target="_blank">@jeepv2405</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Santiago, Chile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacto-cta">
+                    <div class="cta-card">
+                        <h3>¿Listo para colaborar?</h3>
+                        <p>Estoy abierto a oportunidades de desarrollo profesional en:</p>
+                        <ul>
+                            <li>Automatización Inteligente</li>
+                            <li>Desarrollo con IA</li>
+                            <li>Infraestructura Cloud</li>
+                            <li>Ciencia de Datos</li>
+                            <li>Consultoría Tecnológica</li>
+                        </ul>
+                        <a href="mailto:Jparravergara029@gmail.com" class="btn btn-primary">Enviar Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Juan Parra</h3>
+                    <p>Consultor Junior | Desarrollador</p>
+                    <p>Especializado en IA, Automatización y Cloud Computing</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Sígueme</h4>
+                    <div class="social-icons">
+                        <a href="mailto:Jparravergara029@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/juan-parra-vergara-5a9b1b334" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jeepv2405" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Juan Parra Vergara. Todos los derechos reservados.</p>
+                <p>Desarrollado con <i class="fas fa-heart"></i> usando GitHub Pages</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
